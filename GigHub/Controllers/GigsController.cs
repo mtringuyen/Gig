@@ -35,7 +35,7 @@ namespace GigHub.Controllers
                 ArtistId = User.Identity.GetUserId(),
                 GenreId = model.Genre,
                 Venue = model.Venue,
-                DateTime = DateTime.Parse(string.Format("{0} {1}", model.Date, model.Time))
+                DateTime = model.DateTime
             };
 
             _context.Gigs.Add(gig);
